@@ -1,14 +1,14 @@
 import { Route, Router } from "@solidjs/router";
 import { ParentComponent } from "solid-js";
 
-//ROUTER
+//ROUTES
 import Home from "@pages/Home";
 
-type RouterAppProps = {
+type AppProps = {
 	layout: ParentComponent;
 };
 
-export default function App({ layout }: RouterAppProps) {
+export default function App({ layout }: AppProps) {
 	return (
 		<Router root={layout}>
 			<Route path="/" component={Home} />
